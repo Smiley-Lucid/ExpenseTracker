@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+}
+
+header{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+.summary{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card{
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.form-selection,.table-section{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom: 20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input,select{
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+button{
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    background-color: blue;
+    color: white;
+}
+
+th:hover{
+    background-color: #1d4ed8;
+}
+
+@media (max-width: 820px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
